@@ -29,7 +29,6 @@ function GetRandomNumber(numMin , numMax){
 }
 
 const numPC = GetRandomNumber(min , max);
-console.log(numPC);
 
 const somma = numUser + numPC;
 
@@ -39,4 +38,16 @@ function evenCheck(numSomma){
     } else return false
 }
 
-console.log(evenCheck(somma));
+const esitoCheck = evenCheck(somma);
+
+if ((userChoice === 'Pari' && esitoCheck === true) || (userChoice === 'Dispari' && esitoCheck === false)){
+    alert(`Hai scelto ${userChoice} e  ${numUser}
+il PC ha estratto ${numPC}
+la somma e ${somma} 
+QUINDI HAI VINTO!!!`)
+} else {
+    alert(`Hai scelto ${userChoice} e  ${numUser}
+il PC ha estratto ${numPC}
+la somma e ${somma} 
+QUINDI HAI PERSO`)
+}
