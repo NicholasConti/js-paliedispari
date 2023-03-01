@@ -30,16 +30,17 @@ function GetRandomNumber(numMin , numMax){
 
 const numPC = GetRandomNumber(min , max);
 
+//somma numeri PC e Utente
 const somma = numUser + numPC;
-
+//Funzio per vedere se la somma e pari o dispari
 function evenCheck(numSomma){
     if (numSomma % 2 === 0){
         return true
     } else return false
 }
-
 const esitoCheck = evenCheck(somma);
 
+//check vincitore
 if ((userChoice === 'Pari' && esitoCheck === true) || (userChoice === 'Dispari' && esitoCheck === false)){
     alert(`Hai scelto ${userChoice} e  ${numUser}
 il PC ha estratto ${numPC}
