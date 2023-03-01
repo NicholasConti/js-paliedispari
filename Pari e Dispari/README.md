@@ -4,10 +4,11 @@ PARI e DISPARI
 - creo uuna variabile userChoice in cui chiedo all' utente di scegliete tra pari e dispari
     - controllo che l'input si valido
 
+- inizializzo 1 variabile min(1) e 1 variabile max(5) per i valori massimi e minimi
 - creo una variabile numUser in cui l' utente dovra scrivere un numero  tra 1 e 5
     - controllo che l'input sia valido
 
-- inizializzo 1 variabile min(1) e 1 variabile max(5) per i valori casuali del pc
+
 - creo una funzione che restituira un numero casuale tra 1 e 5
 - assegno alla variabile numPC il valore restituito dalla funzione
 - creo la variabile somma in cui sommo numUser + numPC

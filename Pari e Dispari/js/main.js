@@ -13,6 +13,7 @@ let numUser;
 let min = 1;
 let max = 5;
 check = false;
+
 //input check
 while (check === false){
     numUser = Number(prompt('Scegli un numero tra 1 e 5'));
@@ -21,4 +22,21 @@ while (check === false){
     }  
 }
 
-console.log(numUser);
+//PC random number
+function GetRandomNumber(numMin , numMax){
+    const randomNumber = Math.floor(Math.random() * (numMax - numMin +1)) + 1 ;
+    return randomNumber;
+}
+
+const numPC = GetRandomNumber(min , max);
+console.log(numPC);
+
+const somma = numUser + numPC;
+
+function evenCheck(numSomma){
+    if (numSomma % 2 === 0){
+        return true
+    } else return false
+}
+
+console.log(evenCheck(somma));
