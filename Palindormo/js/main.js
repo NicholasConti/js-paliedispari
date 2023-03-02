@@ -3,12 +3,11 @@
 const word = prompt(' Inserisci una parola');
 
 let reverseWords = [];
-let x = 0 ;
 //scrivo la parola al contrario nell array
 for (let i = word.length - 1; i >= 0; i--){
-    reverseWords[x] = word[i];
-    x++;
+    reverseWords.push(word[i]);
 }
+
 //funzione per verificare se le parole nello stesso indice sono uguali
 function paliCheck(inputWord, wordReverse){
     let check = false
